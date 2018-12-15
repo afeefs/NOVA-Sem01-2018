@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<!-- saved from url=(0061)https://www.nvcc.edu/home/jumiller/html_tutorial/linking.html -->
+<html class="gr__nvcc_edu"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Judy's HTML Tutorial</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+<link rel="stylesheet" href="./Judy&#39;s HTML Tutorial_files/main.css">
+<link rel="stylesheet" href="./Judy&#39;s HTML Tutorial_files/judy.css">
+<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+</head>
+<body data-gr-c-s-loaded="true" class="">
+<!-- Wrapper -->
+<div id="wrapper"> 
+  
+  <!-- Header -->
+  <header id="header">
+    <div class="inner"> 
+      
+      <!-- Logo --> 
+      <a href="https://www.nvcc.edu/home/jumiller/html_tutorial/index.html" class="logo"> <span class="symbol"><i class="fa fa-2x fa-code" aria-hidden="true"></i></span><span class="title">Judy's HTML Tutorial</span> </a> 
+      
+      <!-- Nav -->
+      <nav>
+        <ul>
+          <li><a href="https://www.nvcc.edu/home/jumiller/html_tutorial/linking.html#menu">Menu</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+  <!-- Menu -->
+ 
+  
+  <!-- Main -->
+    <div id="main">
+      <div class="inner">
+        <h3>Linking</h3>
+        <p>Linking two pages together requires the following code:</p>
+        <div class="table-wrapper">
+          <table>
+            <tbody><tr>
+              <td>
+                &lt;a href="filename.html"&gt;words for the user to click on&lt;/a&gt;
+             </td>
+            </tr>
+          </tbody></table>
+      </div>
+
+     
+      <p>Where do you put this code? Where you want the link to appear. Make sure it's between the body tags, just as all other content on you web page should be. </p>
+      <p>The filename.html gets replaced by the name of the file you are linking to. The filename in the link must match exactly the actual name of the file. If you've named your file as I've suggested, it has no capitals, no spaces, and ends with .html. That makes it easier when you're linking.</p>
+      <p> The "words for the user to click on" should be something that describes where the link will take the user.  So "Click Here!" would not be very helpful to the user, whereas "Learn  about zebras" would give the user a clue about where the link leads.</p>
+      <p>For example, if you are linking to a file which contains a description of your favorite movies, the link code might look like this:</p>
+      <div class="table-wrapper">
+        <table>
+          <tbody><tr>
+            <td>
+              Learn about Judy's &lt;a href="fav_movies.html"&gt; favorite movies&lt;/a&gt;.
+           </td>
+          </tr>
+        </tbody></table>
+    </div>
+      <p>This code will work only when the file to which you are linking is in the same folder as the file from which you are linking. If the files are in different folders, you must do some relative pathing, which is beyond the scope of this tutorial.</p>
+      <p>Once you've created the link, test it out, twice. First, test it on your local computer. Then, test it on the server. Don't forget to send both files to the server: the file you are linking from and the file you are linking to. If your link doesn't work, check the following.</p>
+      <dl>
+        <dt>Is the filename in the link code exactly the same as the actual filename?</dt>
+          <dd>Beware: sometimes you don't see the entire filename on your computer. The Windows operating system typically hides file extensions. To see your file extensions, open File Explorer: View &gt; check File Name Extensions. For older versions of Windows: File Explorer: Organize &gt; Folder and Search Options  &gt; View, then uncheck "Hide extensions for known file types."</dd>
+         <dt>Are both the file you are linking from and the file you are linking to in the same folder?</dt>
+          <dd>Don't forget to  send both files to the server. </dd>
+         <dt>Never start the filename in your link code with c:/ or e:/ or any other drive.</dt>
+          <dd>This may work on your local computer, but when a user on another computer tries to access the link, it will fail. The server doesn't have a clue what is on your computer.</dd>
+      </dl>
+      <p>If you want to link to another web site, the link code should include the entire URL, as follows:</p>
+
+       <div class="table-wrapper">
+          <table>
+            <tbody><tr>
+              <td>
+                For a great place to buy books, visit &lt;a href="http://www.amazon.com"&gt;Amazon.&lt;/a&gt;
+             </td>
+            </tr>
+          </tbody></table>
+      </div>
+      
+      <p>Links within your site will also work if you start them with http:// ... etc. For example, you could link to a page within your site as follows: </p>
+
+      <div class="table-wrapper">
+          <table>
+            <tbody><tr>
+              <td>
+      &lt;a href=" http://www.student.nvcc.edu/home/YourUserID/fav_movies.html"&gt;Link to My Favorite Movies&lt;/a&gt;
+              </td>
+            </tr>
+          </tbody></table>
+      </div>
+
+      <p>The link would work, but this  is a bad way to link to pages within your own site, for two reasons: 1) link access time is increased and 2) when you want to move your web site to another server, you have to change all your links. </p>
+      <ul class="actions">
+        <li><a href="https://www.nvcc.edu/home/jumiller/html_tutorial/images.html" class="button special">Images&nbsp;&nbsp;&nbsp;<i class="fa fa-chevron-right" aria-hidden="true"></i></a></li>
+      </ul>
+    </div>
+  </div>
+  
+  <!-- Footer -->
+  <footer id="footer">
+    <div class="inner">
+      <p>Created by <a href="http://www.nvcc.edu/home/jumiller">Judy Jacobs Miller</a> at <a href="http://www.nvcc.edu/">Northern Virginia Community College</a> for ITE 115. <br>
+        Last revised February 13, 2018 <br>
+        This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/us/">Creative Commons Attribution-Noncommercial-No Derivative Works 3.0 United States License</a>.</p>
+    </div>
+  </footer>
+</div>
+
+<!-- Scripts --> 
+<script src="./Judy&#39;s HTML Tutorial_files/jquery.min.js.download"></script> 
+<script src="./Judy&#39;s HTML Tutorial_files/skel.min.js.download"></script> 
+<script src="./Judy&#39;s HTML Tutorial_files/util.js.download"></script> 
+<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]--> 
+<script src="./Judy&#39;s HTML Tutorial_files/main.js.download"></script>
+
+<nav id="menu"><div class="inner">
+    <h2>Menu</h2>
+    <ul>
+      <li><a href="https://www.nvcc.edu/home/jumiller/html_tutorial/index.html">Home</a></li>
+      <li><a href="https://www.nvcc.edu/home/jumiller/html_tutorial/creating.html">Creating</a></li>
+      <li><a href="https://www.nvcc.edu/home/jumiller/html_tutorial/naming.html">Naming</a></li>
+      <li><a href="https://www.nvcc.edu/home/jumiller/html_tutorial/viewing.html">Viewing</a></li>
+      <li><a href="https://www.nvcc.edu/home/jumiller/html_tutorial/revising.html">Revising</a></li>
+      <li><a href="https://www.nvcc.edu/home/jumiller/html_tutorial/validation.html">Validation</a></li>
+      <li><a href="https://www.nvcc.edu/home/jumiller/html_tutorial/ftp.html">FTP</a></li>
+      <li><a href="https://www.nvcc.edu/home/jumiller/html_tutorial/linking.html">Linking</a></li>
+      <li><a href="https://www.nvcc.edu/home/jumiller/html_tutorial/images.html">Images</a></li>
+      <li><a href="https://www.nvcc.edu/home/jumiller/html_tutorial/lists.html">Lists</a></li>
+      <li><a href="https://www.nvcc.edu/home/jumiller/html_tutorial/styling.html">Styling</a></li>
+      <li><a href="https://www.nvcc.edu/home/jumiller/html_tutorial/tables.html">Tables</a></li>
+      <li><a href="https://www.nvcc.edu/home/jumiller/html_tutorial/summary.html">Summary</a></li>
+    </ul>
+  </div><a class="close" href="https://www.nvcc.edu/home/jumiller/html_tutorial/linking.html#menu">Close</a></nav></body></html>

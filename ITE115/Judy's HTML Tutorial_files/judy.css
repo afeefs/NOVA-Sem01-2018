@@ -1,0 +1,29 @@
+#footer .inner p {
+	text-align: center;
+}
+
+#main .inner .actions{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+#externalCSSImage{
+	max-width: 372px;
+	max-height: 274px;
+}
+
+#ftpConnectImage{
+	max-width: 1000px;
+	max-height: 693px;
+}
+
+#ftpTransferImage{
+	max-width: 1000px;
+	max-height: 603px;
+}
+
+.table-wrapper p {
+	margin-bottom: 0.2em;
+}
